@@ -12,15 +12,22 @@ var contadorIntentos;
 
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
-	 
-		//alert(numeroSecreto );
-	
-
+var numeroSecreto=math.floor(math.random()*(100-1))+1;
 }
 
 function verificar()
 {
-	
-	
+  var numero=document.getElementById("numero").value;
+  contadorIntentos++
+    if(numeroSecreto==numero){
+      alert("lo lograste en "+contadorIntentos+"intentos")
+}
+    else{
+        if(numero>numeroSecreto){
+          alert("Te pasaste")
+        }
+        else{
+          alert("Te falta")}
+        }
+
 }
