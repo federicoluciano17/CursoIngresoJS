@@ -1,6 +1,6 @@
 function Mostrar()
 {
-
+var num=prompt
 
 
 
